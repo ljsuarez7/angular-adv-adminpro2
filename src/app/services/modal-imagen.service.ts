@@ -30,7 +30,6 @@ export class ModalImagenService {
     }else{
       this.img = `${base_url}/upload/${tipo}/${img}`;
     }
-    console.log(this.img);
   }
 
   cerraModal(){
