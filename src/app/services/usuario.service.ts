@@ -67,7 +67,7 @@ export class UsuarioService {
         this.guardarLocalStorage(resp.token, resp.menu);
         return true;
       }),
-      catchError(error => of(false))
+      catchError((error) => { console.log('error login: ', error); return of(false)})
     )
 
   }
